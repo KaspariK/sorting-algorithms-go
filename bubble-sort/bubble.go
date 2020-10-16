@@ -9,9 +9,6 @@ package sorting_algorithms_go
 //     Best:    O(n)
 //     Space:   O(1)
 func BubbleSort(n []int) []int {
-	// iterate over items in slice
-		// for each item check item to the right, swap if left > right
-
 	for i := len(n) - 1; i > 0; i-- {
 		for j := 1; j <= i; j++ {
 			if n[j-1] > n[j] {
