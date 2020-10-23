@@ -1,4 +1,4 @@
-package sorting_algorithms_go
+package bubble
 
 // BubbleSort sorts the slice by iterating through the slice comparing adjacent
 // values and swapping the values when n-1 > n.

@@ -1,4 +1,4 @@
-package bubble
+package insertion
 
 import (
 	"reflect"
@@ -6,7 +6,7 @@ import (
 )
 
 // TODO: Benchmark test
-func TestBubbleSort(t *testing.T) {
+func TestInsertionSort(t *testing.T) {
 	tests := map[string]struct{
 		items []int
 		want []int
@@ -16,7 +16,7 @@ func TestBubbleSort(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := BubbleSort(tc.items)
+		got := InsertionSort(tc.items)
 
 		if reflect.DeepEqual(tc.want, got) {
 			t.Errorf("%s: expected: %v, got: %v", name, tc.want, got)
